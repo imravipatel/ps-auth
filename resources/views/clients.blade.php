@@ -20,17 +20,17 @@
                 </div>
                 <div class="mt-3 p-6 bg-white border-b border-gray-200">
                     <form action="/oauth/clients" method="POST">
-                        <div>
-                            <x-label for="name">Name</x-label>
-                            <x-input type="text" name="name" placeholder="Client Name"></x-input>
+                        <div class="mt-2">
+                            <x-input-label for="name">Name</x-input-label>
+                            <x-text-input type="text" name="name" placeholder="Client Name"></x-text-input>
                         </div>
-                        <div>
-                            <x-label for="redirect">Redirect</x-label>
-                            <x-input type="text" name="redirect" placeholder="https://test-url.com/callback"></x-input>
+                        <div class="mt-2">
+                            <x-input-label for="redirect">Redirect</x-input-label>
+                            <x-text-input type="text" name="redirect" placeholder="https://test-url.com/callback"></x-text-input>
                         </div>
-                        <div>
+                        <div class="mt-3">
                             @csrf
-                            <x-button type="submit">Create Client</x-button>
+                            <x-primary-button type="submit">Create Client</x-primary-button>
                         </div>
                     </form>
                 </div>
